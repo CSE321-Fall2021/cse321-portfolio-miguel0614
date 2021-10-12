@@ -58,7 +58,7 @@ Main file which contains the initialization and code to run the timer system.
 * timer(void) - Handles checking remaining time, incrementing timer, and printing the associated output
 * blinkLED(void) - Handles turning on and off LED with a specified blinking interval
 
-## stm_methods.cpp:
+## CSE321_project2_mabautis_stm_methods.cpp:
 Contains initialization code for the RCC and GPIO pins and code to write to MODER
 
 ### API and Built-In Elements Used:
@@ -69,7 +69,7 @@ Contains initialization code for the RCC and GPIO pins and code to write to MODE
 * set_pin_mode(pin, *port, mode) - Set the designed pin/port to be an input/output
 * enable_rcc(*port) - Enable the reset control clock for the specified GPIO port
 
-## lcd1602.cpp:
+## CSE321_project2_mabautis_lcd1602.cpp:
 File that declares the initialization and methods to operate the 1602 LCD for printing, clearing, and powering the display.
 
 ### Things Declared: 
