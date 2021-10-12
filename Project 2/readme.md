@@ -26,7 +26,7 @@ Once the program is built and run, the 4x4 matrix keypad is used to control the 
 
 # Modules
 
-## main.cpp:
+## CSE321_project2_mabautis_main.cpp:
 Main file which contains the initialization and code to run the timer system.
 
 ### Things Declared: 
