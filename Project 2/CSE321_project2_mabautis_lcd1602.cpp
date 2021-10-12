@@ -1,4 +1,4 @@
-#include "lcd1602.h"
+#include "CSE321_project2_mabautis_lcd1602.h"
 #include "mbed.h"
 
 CSE321_LCD::CSE321_LCD(unsigned char lcd_cols, unsigned char lcd_rows,
