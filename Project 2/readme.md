@@ -13,6 +13,7 @@ Alarm system that users can program to count up or down from 9 minutes and 59 se
 * 4x4 Matrix Keypad
 * 1602 LCD
 * I2C Controller
+* Breadboard
 * 4 LEDs
 * Resistors
 * Wires
