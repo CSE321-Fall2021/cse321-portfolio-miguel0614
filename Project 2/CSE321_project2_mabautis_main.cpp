@@ -4,8 +4,8 @@
  * File Purpose: Implements timer functionality that is operated by a 4x4 matrix keypad
  *
  * Modules: 
- *      stm_methods - Contains initialization code for the RCC and GPIO pins and code to write to MODER
- *      lcd1602 - Contains intiialization and operation code for a 1602 LCD
+ *      CSE321_project2_mabautis_stm_methods - Contains initialization code for the RCC and GPIO pins and code to write to MODER
+ *      CSE321_project2_mabautis_lcd1602 - Contains intiialization and operation code for a 1602 LCD
  *
  * Subroutines:
  *      void isr_col(void) - Rising edge Interrupt Service Routine for column pins [PF_14, PE_11, PE_9, PF_13]
