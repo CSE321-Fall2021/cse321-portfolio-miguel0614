@@ -1,0 +1,7 @@
+{
+    "requires": ["bare-metal", "events"],
+    "target_overrides": {
+        "*": {
+        }
+    }
+}
