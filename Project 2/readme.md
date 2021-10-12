@@ -11,6 +11,7 @@ Alarm system that users can program to count up or down from 9 minutes and 59 se
 # Required Materials
 * Nucleo L4R5ZI
 * 4x4 Matrix Keypad
+* 1602 LCD
 * I2C Controller
 * 4 LEDs
 * Resistors
