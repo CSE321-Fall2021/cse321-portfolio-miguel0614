@@ -34,9 +34,9 @@
  *      STM32L48 User Guide - https://www.st.com/resource/en/reference_manual/rm0351-stm32l47xxx-stm32l48xxx-stm32l49xxx-and-stm32l4axxx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf 
  */
 
-#include <lcd1602.h>
+#include <CSE321_project2_mabautis_lcd1602.h>
 #include <mbed.h>
-#include <stm_methods.h>
+#include <CSE321_project2_mabautis_stm_methods.h>
 #include <string>
 
 #define ASCII_ZERO 48
