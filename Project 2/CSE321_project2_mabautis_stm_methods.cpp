@@ -1,5 +1,5 @@
 /*
- * Author: Miguel Bautista
+ * Author: Miguel Bautista (50298507)
  *
  * File Purpose: Contains initialization code for the RCC and GPIO pins and code to write to MODER
  *

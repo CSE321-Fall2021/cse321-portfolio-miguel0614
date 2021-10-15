@@ -1,5 +1,8 @@
 # About
 
+Contributor List: 
+* **Miguel Bautista** (50298507)
+
 This repository serves as a portfolio of the work done in CSE321. This will contain work from:
 * Project 1
 

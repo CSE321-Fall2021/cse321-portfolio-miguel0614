@@ -1,5 +1,9 @@
 # About
 Alarm system that users can program to count up or down from 9 minutes and 59 seconds by utilizing a 4x4 matrix keypad.
+
+Contributor List: 
+* **Miguel Bautista** (50298507)
+
 # Features
 * Count up or count down from a maximum time of 9 minutes and 59 seconds
 * Turn off the system by pressing B on the keypad

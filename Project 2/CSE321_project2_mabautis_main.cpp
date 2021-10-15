@@ -1,5 +1,5 @@
 /*
- * Author: Miguel Bautista
+ * Author: Miguel Bautista (50298507)
  *
  * File Purpose: Implements timer functionality that is operated by a 4x4 matrix keypad
  *
@@ -287,11 +287,15 @@ void validKey(char letter) {
 
   case 'D':
     mode = 1;
-    LCD.clear(); // Clear LCD
-    LCD.print("Enter Time:"); // Print prompt
     // Reset flags
     time_remaining = 0;
     time_passed = 0;
+    
+    LCD.clear(); // Clear LCD
+    LCD.print("Enter Time:"); // Print prompt
+    LCD.setCursor(0, 1); // Set cursor to second row
+    LCD.print("0:00"); // Print timer prompt
+
     blinkLED(); // Valid key press -> blink LED
     break;
   }
