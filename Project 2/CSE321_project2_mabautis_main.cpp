@@ -250,7 +250,6 @@ void timer(void) {
 
 void powerOnTimer(void) {
   mode = 1; // Set mode to Input
-  blinkLED(); // Valid button -> blink LED
   LCD.backlight(); // Turn on LCD backlight
   validKey('D'); // Handle mode change
 }
