@@ -1,7 +1,7 @@
 /*
  * Author: Miguel Bautista (50298507)
  *
- * File Purpose:
+ * File Purpose: Implements the security alarm system with the functionality defined in the readme
  *
  * Modules:
  *      CSE321_project2_mabautis_stm_methods - Contains initialization code for
@@ -10,12 +10,34 @@
  * code for a 1602 LCD
  *
  * Subroutines:
+ * isr_col(void) - Rising edge Interrupt Service Routine for column pins [PF_14, PE_11, PE_9, PF_13]
+ * isr_falling_edge(void) - Falling edge Interrupt Service Routine for column pins [PF_14, PE_11, PE_9, PF_13]
+ * isr_microphone(void) - Rising edge ISR for micrphone PD_7
+ * isr_ultrasonic(void) - Rising edge ISR for ultrasonic sensor echo pin PD_5
+ * isr_ultrasonic_falling_edge(void) - Falling edge ISR for ultrasonic echo pin 
+ * ultrasonic_handler(void) - Handler after timeout is reached to see if object is within specified range
+ * trigger_ultrasonic_sensor(void) - Send 10us pulse to ultrasonic trigger pin
+ * microphone_handler(void) - Handles switching to triggered mode if sound is detected
+ * row_handler(void) - Thread callback that handles the powering of rows on the matrix keypad
+ * key_handler(void) - Thread callback that handles key presses based on current system mode
+ * power_on_mode(void) - Initial power on state where passcode is defined
+ * unarmed_mode(void) - Unarmed state where sensors do not trigger the system
+ * armed_mode(void) - Armed state (after entering passcode in unarmed mode) where sensors trigger the system
+ * triggered_mode(void) - State when a sensor is tripped in the armed state
+ * trigger_mode_transition(void) - Used to call blocking code from ultrasonic ISR when motion detected
+ * idle_timeout_handler(void) - Timeout handler after 10 seconds has passed without system input
+ * set_display_off(void) - Calls blocking code from idle timeout to set the display off and reset LCD text
  *
  * Assignment: Project 3
  *
  * Inputs:
- *
+ * Ultrasonic Sensor - Used to determine proximity of other objects
+ * Microphone - Used to determine nearby sounds
+ * 4x4 Matrix Keypad - Prvoides user input to system
  * Outputs:
+ * LEDs - Used to indicate when the system is in the triggered state
+ * Active Buzzer - Used to provide auditory indication when the system is in the triggered state
+ * 1602 LCD - Provides visual prompts for users
  *
  * Constraints:
  *
